@@ -3,7 +3,6 @@
 #include<string>
 #include<cstring>
 #include<cstdlib>
-using namespace std;
 
 #define SIZE 255
 
@@ -24,7 +23,7 @@ myclass::myclass()
     p = (char *) malloc(SIZE);
     if(!p) 
     {
-        cout << "Allocation Error \n";
+        std::cout << "Allocation Error \n";
         exit(1);
     }
     *p = '\0';
@@ -34,7 +33,7 @@ myclass::myclass()
 //文字列オブジェクトが破棄されたときメモリを解放
 myclass::~myclass()
 {
-    cout << "Freeing p\n";
+    std::cout << "Freeing p\n";
     free(p);
 }
 
@@ -42,7 +41,7 @@ void myclass::set(const char *ptr)
 {
     if(strlen(p) > SIZE)
     {
-        cout << "Strings too big \n";
+        std::cout << "Strings too big \n";
         return;
     }
     strcpy(p, ptr);
@@ -51,7 +50,7 @@ void myclass::set(const char *ptr)
 
 void myclass::show()
 {
-    cout << p << " - length: " << len << "\n";
+    std::cout << p << " - length: " << len << "\n";
 }
 
 main()
