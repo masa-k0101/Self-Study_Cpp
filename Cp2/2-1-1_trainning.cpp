@@ -1,5 +1,4 @@
 #include<iostream>
-using namespace std;
 
 #define SIZE 10
 
@@ -27,7 +26,7 @@ void stack::push(char ch)
 {
     if (tos==SIZE)
     {
-        cout << "Stack is full\n";
+        std::cout << "Stack is full\n";
         return;
     }
     stck[tos] = ch;
@@ -39,7 +38,7 @@ char stack::pop()
 {
     if (tos==0)
     {
-        cout << "Stack is empty\n";
+        std::cout << "Stack is empty\n";
         return 0;   //スタックが空になってnullを返す
     }
     tos--;
@@ -59,8 +58,8 @@ main()
     s2.push('z');
 
     for (i=0; i<3; i++)
-        cout << "Pop s1: " << s1.pop() << "\n";
+        std::cout << "Pop s1: " << s1.pop() << "\n";
     for (i=0; i<3; i++)
-        cout << "Pop s2: " << s2.pop() << "\n";
+        std::cout << "Pop s2: " << s2.pop() << "\n";
     return 0;
 }
