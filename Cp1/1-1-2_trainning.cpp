@@ -2,7 +2,7 @@
 
 main ()
 {
-    int i,j;
+    int i, j;
     double d;
 
     i = 10;
