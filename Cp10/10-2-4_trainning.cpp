@@ -4,7 +4,7 @@
 
 class area
 {
-        double dim1, dim2;      // 図形の寸法
+        double dim1, dim2;      //図形の寸法
     public:
         void setarea(double d1, double d2)
         {
