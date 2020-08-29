@@ -1,5 +1,3 @@
-// インターフェースを定義するために仮想関数を使う
-
 #include<iostream>
 
 class num
